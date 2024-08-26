@@ -3,3 +3,6 @@
   
 ## 22-09-2024
   * Did a couple of challenges on destructuring.
+
+## 26-09-2024
+  * Learned how to make a Clock, and the setInterval(), setTimeout(), and clearInterval() methods.
