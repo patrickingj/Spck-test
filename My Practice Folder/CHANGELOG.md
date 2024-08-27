@@ -6,3 +6,6 @@
 
 ## 26-09-2024
   * Learned how to make a Clock, and the setInterval(), setTimeout(), and clearInterval() methods.
+  
+## 27-09-2025
+  * Learned to build a simple calculator app.
