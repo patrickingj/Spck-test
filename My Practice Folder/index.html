@@ -3,39 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="calculator">
-        <input type="text" class="calculator-screen" id="calculator-screen" disabled />
-        <div class="calculator-keys">
-           
-          
-           
-            
-            <button type="button" onclick="appendToDisplay('+')" class="operator" value="+">+</button>
-            <button type="button" onclick="appendToDisplay('7')" value="7">7</button>
-            <button type="button" onclick="appendToDisplay('8')" value="8">8</button>
-            <button type="button" onclick="appendToDisplay('9')" value="9">9</button>
-
-            <button type="button" onclick="appendToDisplay('-')" class="operator" value="-">-</button>
-            <button type="button" onclick="appendToDisplay('4')" value="4">4</button>
-            <button type="button" onclick="appendToDisplay('5')" value="5">5</button>
-            <button type="button" onclick="appendToDisplay('6')" value="6">6</button>
-
-            <button type="button" onclick="appendToDisplay('*')" class="operator" value="*">&times;</button>
-            <button type="button" onclick="appendToDisplay('1')" value="1">1</button>
-            <button type="button" onclick="appendToDisplay('2')" value="2">2</button>
-            <button type="button" onclick="appendToDisplay('3')" value="3">3</button>
-
- 
-            <button type="button" onclick="appendToDisplay('/')" class="operator" value="/">&divide;</button>
-            <button type="button" onclick="appendToDisplay('0')" value="0">0</button>
-            <button type="button" onclick="appendToDisplay('.')" value=".">.</button>
-            <button type="button" onclick="clearDisplay()" id="clear">C</button>
-
-            <button type="button" onclick="calculate()" class="equal-sign" value="=">=</button>
+    <div class="game-container">
+        <h1>Rock Paper Scissors</h1>
+        <div class="choices">
+            <button class="choice" id="rock" onclick="playGame('rock')">Rock</button>
+            <button class="choice" id="paper" onclick="playGame('paper')">Paper</button>
+            <button class="choice" id="scissors" onclick="playGame('scissors')">Scissors</button>
+        </div>
+        <div class="results">
+            <p id="message">Make your choice!</p>
+            <div id="playersChoices">
+              <p id="player">Player's choice:</p>
+              <p id="computer">Computer's choice:</p>
+            </div>
         </div>
     </div>
     <script src="main.js"></script>
